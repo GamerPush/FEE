@@ -1,0 +1,23 @@
+import { useNavigate } from "react-router-dom";
+
+export function P404() {
+  const navigate = useNavigate();
+
+  return (
+    <section className="h95 fyc">
+      <div className="box2 p2 bg50 fy jsb">
+        <h1 style={{ color: "yellow" }}>404</h1>
+
+        <h4>
+          We don't have the page requested by you.
+          <br />
+          Maybe under construction...
+        </h4>
+      </div>
+
+      <button onClick={() => navigate("/")}>
+        Go Home
+      </button>
+    </section>
+  );
+}
